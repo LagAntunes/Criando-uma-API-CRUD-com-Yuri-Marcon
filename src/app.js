@@ -12,6 +12,7 @@ app.get('/', function(req, res) {
 })
 
 app.post('/pessoa', function(req, res) {
+    console.log(req.body)
     InsertPessoa(req.body)
     res.json({
         "statusCode": 200
